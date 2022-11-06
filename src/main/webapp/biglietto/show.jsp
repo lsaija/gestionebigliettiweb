@@ -21,7 +21,7 @@
 			  <div class="container">
 			  
 			  		<div class='card'>
-					    <div class='card-header'>
+					    <div class='text-secondary card-header'>
 					        <h5>Visualizza dettaglio</h5>
 					    </div>
 					     <% Biglietto bigliettoInPagina = (Biglietto)request.getAttribute("visualizza_biglietto_attr"); %>

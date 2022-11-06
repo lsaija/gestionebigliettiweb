@@ -67,14 +67,16 @@
 				  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" ></button>
 				</div>
 			    
-			     <div class="p-5 mb-4 bg-info  bg-gradient rounded-3">
+			     <div class="p-5 mb-4 bg-  bg-gradient rounded-3">
 				      <div class="container-fluid py-5">
 				        <h1 class="text-secondary display-5 fw-bold">Prenditi una pausa...VOLA</h1>
-				        <p class=" text-secondary col-md-8 fs-4">Scopri Praga, Madrid e altre città. Viaggia a Nov-Gen.Si applicano Termini e Condizioni. </p>
-				         <!--  <a href="#" class="icon-link">Termini e Condizioni. -->
-			              <!--   <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>  -->
-			                
-				        <a class=" btn btn-light btn-lg" href="ListBigliettiServlet">VOLI ACQUISTATI</a>
+				        <p class=" text-secondary col-md-8 fs-4">Scopri Praga, Madrid e altre città. Viaggia a Nov-Gen.Si applicano termini e condizioni. 
+				           <!--   <a href="#" class="text-secondary icon-link">Termini e Condizioni.  -->
+                          <div class="w-25 p-3" style="background-color: #;"></div>
+			            </p>
+			            
+				       <a class=" btn btn-outline-info btn-lg" href="ListBigliettiServlet">VOLI ACQUISTATI</a> 
+
 				        <a  href="PrepareSearchBigliettoServlet"  class="btn btn-warning btn-lg bi bi-airplane-fill">
 				           CERCA
 			               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-airplane-fill" viewBox="0 0 16 16">
@@ -126,6 +128,7 @@
 			        
 			      </div>
 			    </div>
+			    <div class="w-25 p-3" style="background-color: #;"></div>
 			  </div>
 			  
 			</main>

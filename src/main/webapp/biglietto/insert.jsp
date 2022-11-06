@@ -34,7 +34,7 @@
 					</div>
 			  
 			  <div class='card'>
-				    <div class='card-header'>
+				    <div class='text-secondary card-header '>
 				        <h5>Inserisci nuovo elemento</h5> 
 				    </div>
 				    <div class='card-body'>
@@ -73,7 +73,7 @@
 								
 								
 							<div class="col-12">
-								<button type="submit" name="submit" value="submit" id="submit" class="btn btn-primary">Conferma</button>
+								<button type="submit" name="submit" value="submit" id="submit" class="text-light btn btn-secondary">Conferma</button>
 							</div>
 		
 						</form>

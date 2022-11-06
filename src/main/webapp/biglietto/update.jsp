@@ -74,7 +74,7 @@
 								
 								
 							<div class="col-12">
-								<button type="submit" name="submit" value="submit" id="submit" class="btn btn-primary">Conferma</button>
+								<button type="submit" name="submit" value="submit" id="submit" class="text-light btn btn-info">Conferma</button>
 								 <input type ="hidden" name="idBiglietto" value="<%=bigliettoInPagina.getId() %>">
 							</div>
 		
@@ -87,7 +87,21 @@
 				<!-- end card -->
 				</div>		
 					  
-			    
+                  <div style="height: 100px;">
+                     <div class="mh-100" style="width: 100px; height: 200px;"></div>
+                  </div>
+                  
+                   <div style="height: 100px;">
+                     <div class="mh-100" style="width: 100px; height: 200px;"></div>
+                  </div>
+                  
+                   <div style="height: 100px;;">
+                     <div class="mh-100" style="width: 100px; height: 200px;"></div>
+                  </div>
+                  
+                   <div style="height: 100px;">
+                     <div class="mh-100" style="width: 100px; height: 200px;"></div>
+                  </div>
 			  <!-- end container -->  
 			  </div>
 			  

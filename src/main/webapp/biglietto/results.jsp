@@ -39,11 +39,11 @@
 		  
 		  
 		  		<div class='card'>
-				    <div class='card-header'>
+				    <div class='text-secondary card-header'>
 				        <h5>Lista dei risultati</h5> 
 				    </div>
 				    <div class='card-body'>
-				    	<a class="btn btn-primary " href="PrepareInsertBigliettoServlet">Add New</a>
+				    	<a class="btn btn-outline-info " href="PrepareInsertBigliettoServlet">Add New</a>
 				    
 				        <div class='table-responsive'>
 				            <table class='table table-striped ' >
