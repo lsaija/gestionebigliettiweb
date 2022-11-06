@@ -6,6 +6,7 @@ import javax.persistence.EntityManager;
 
 import it.prova.gestionebigliettiweb.dao.BigliettoDAO;
 import it.prova.gestionebigliettiweb.model.Biglietto;
+import it.prova.gestionebigliettiweb.web.listener.LocalEntityManagerFactoryListener;
 
 public class BigliettoServiceImpl implements BigliettoService {
 	private BigliettoDAO bigliettoDao;

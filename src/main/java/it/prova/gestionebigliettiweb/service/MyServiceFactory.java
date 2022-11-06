@@ -1,6 +1,7 @@
 package it.prova.gestionebigliettiweb.service;
 
 import it.prova.gestionebigliettiweb.dao.BigliettoDAO;
+import it.prova.gestionebigliettiweb.dao.BigliettoDAOImpl;
 
 public class MyServiceFactory {
 	
@@ -12,7 +13,7 @@ public class MyServiceFactory {
 			BIGLIETTO_SERVICE_INSTANCE = new BigliettoServiceImpl();
 
 		if (BIGLIETTODAO_INSTANCE == null)
-			BIGLIETTODAO_INSTANCE = new BigliettoServiceImpl();
+			BIGLIETTODAO_INSTANCE = new BigliettoDAOImpl();
 
 		BIGLIETTO_SERVICE_INSTANCE.setBigliettoDao(BIGLIETTODAO_INSTANCE);
 
