@@ -120,4 +120,22 @@ public class BigliettoServiceImpl implements BigliettoService {
 		}
 	}
 
+	@Override
+	public List<Biglietto> findByExample(Biglietto input) throws Exception {
+
+		EntityManager entityManager = LocalEntityManagerFactoryListener.getEntityManager();
+
+		try {
+
+			bigliettoDao.setEntityManager(entityManager);
+
+			return bigliettoDao.findByExample(input);
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw e;
+		} finally {
+			LocalEntityManagerFactoryListener.closeEntityManager(entityManager);
+		}
+	}
+
 }
