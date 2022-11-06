@@ -30,7 +30,26 @@
 			  <symbol id="chevron-right" viewBox="0 0 16 16">
 			    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
 			  </symbol>
-			</svg>
+			
+			<symbol id="trash" viewBox="0 0 16 16"> 
+			   <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+               <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+			</symbol>
+			
+			<symbol id="insert-icon" viewBox="0 0 16 16"> 
+			    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z"/>
+			</symbol>
+			  
+			<symbol id="update-icon" viewBox="0 0 16 16"> 
+			   <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
+               <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/> 
+			</symbol>
+		  </svg>
+		  
+		  
+		  		
+		 
 			<!-- ############## end ###################  -->
 	   
 	   
@@ -48,13 +67,16 @@
 				  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" ></button>
 				</div>
 			    
-			     <div class="p-5 mb-4 bg-info  rounded-3">
+			     <div class="p-5 mb-4 bg-info  bg-gradient rounded-3">
 				      <div class="container-fluid py-5">
-				        <h1 class="display-5 fw-bold">Benvenuto alla Gestione Biglietti</h1>
-				        <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. </p>
-				        <a class="btn btn-light btn-lg" href="ListBigliettiServlet">Lista Elementi</a>
-				        <a  href="PrepareSearchBigliettoServlet"  class="btn btn-light btn-lg bi bi-airplane-fill">
-				           Search
+				        <h1 class="text-secondary display-5 fw-bold">Prenditi una pausa...VOLA</h1>
+				        <p class=" text-secondary col-md-8 fs-4">Scopri Praga, Madrid e altre città. Viaggia a Nov-Gen.Si applicano Termini e Condizioni. </p>
+				         <!--  <a href="#" class="icon-link">Termini e Condizioni. -->
+			              <!--   <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>  -->
+			                
+				        <a class=" btn btn-light btn-lg" href="ListBigliettiServlet">VOLI ACQUISTATI</a>
+				        <a  href="PrepareSearchBigliettoServlet"  class="btn btn-warning btn-lg bi bi-airplane-fill">
+				           CERCA
 			               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-airplane-fill" viewBox="0 0 16 16">
                              <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Z"/>
                            </svg>
@@ -68,34 +90,35 @@
 			  <div class="container px-4 py-5" id="featured-3">
 			    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
 			      <div class="feature col">
-			        <div class="feature-icon bg-primary bg-gradient">
-			          <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg>
+			        <div class="feature-icon bg-secondary bg-gradient">
+			          <svg class="bi bi-trash" width="1em" height="1em"><use xlink:href="#trash"/></svg>
+			            
 			        </div>
-			        <h2>Lista Elementi</h2>
-			        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-			        <a href="ListBigliettiServlet" class="icon-link">
+			        <h2>Cancella Volo</h2>
+			        <p>Cancella il biglietto cliccando 'delete' vicino al biglietto da rimuovere. E ricorda di confermare.</p>
+			        <a href="ListBigliettiServlet" class="text-info icon-link">
 			          Vai alla funzionalità
 			          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
 			        </a>
 			      </div>
 			      <div class="feature col">
-			        <div class="feature-icon bg-primary bg-gradient">
-			          <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
+			        <div class="feature-icon bg-secondary bg-gradient">
+			          <svg class="bi" width="1em" height="1em"><use xlink:href="#insert-icon"/></svg>
 			        </div>
 			        <h2>Inserisci Nuovo</h2>
-			        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-			        <a href="PrepareInsertBigliettoServlet" class="icon-link">
+			        <p>Aggiungi Voli acquistati,compila i campi ed il gioco è fatto.</p>
+			        <a href="PrepareInsertBigliettoServlet" class="text-info icon-link">
 			          Vai alla funzionalità
 			          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
 			        </a>
 			      </div>
 			      <div class="feature col">
-			        <div class="feature-icon bg-primary bg-gradient">
-			          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
+			        <div class="feature-icon bg-secondary bg-gradient">
+			          <svg class="bi" width="1em" height="1em"><use xlink:href="#update-icon"/></svg>
 			        </div>
-			        <h2>Altra Funzione</h2>
-			        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-			        <a href="#" class="icon-link">
+			        <h2>Coming Soon...</h2>
+			        <p>Presto una nuova funzionalità,nel mentre non perdere quelle già esistenti.</p>
+			        <a href="#" class="text-secondary icon-link">
 			          Vai alla funzionalità
 			          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
 			        
