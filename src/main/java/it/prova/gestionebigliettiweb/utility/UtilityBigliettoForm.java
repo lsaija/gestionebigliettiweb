@@ -9,11 +9,9 @@ import org.apache.commons.lang3.math.NumberUtils;
 
 import it.prova.gestionebigliettiweb.model.Biglietto;
 
-
-
 public class UtilityBigliettoForm {
 	public static Biglietto createBigliettoFromParams(String provenienzaInputParam, String destinazioneInputParam,
-			String dataStringParam, String  prezzoInputStringParam) {
+			String dataStringParam, String prezzoInputStringParam) {
 
 		Biglietto result = new Biglietto(provenienzaInputParam, destinazioneInputParam);
 
@@ -26,11 +24,10 @@ public class UtilityBigliettoForm {
 	}
 
 	public static boolean validateBigliettoBean(Biglietto bigliettoToBeValidated) {
-		
+
 		if (StringUtils.isBlank(bigliettoToBeValidated.getProvenienza())
 				|| StringUtils.isBlank(bigliettoToBeValidated.getDestinazione())
-				|| bigliettoToBeValidated.getPrezzo() == null 
-				|| bigliettoToBeValidated.getPrezzo() < 1
+				|| bigliettoToBeValidated.getPrezzo() == null || bigliettoToBeValidated.getPrezzo() < 1
 				|| bigliettoToBeValidated.getData() == null) {
 			return false;
 		}

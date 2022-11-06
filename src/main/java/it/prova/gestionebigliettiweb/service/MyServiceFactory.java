@@ -4,7 +4,7 @@ import it.prova.gestionebigliettiweb.dao.BigliettoDAO;
 import it.prova.gestionebigliettiweb.dao.BigliettoDAOImpl;
 
 public class MyServiceFactory {
-	
+
 	private static BigliettoService BIGLIETTO_SERVICE_INSTANCE = null;
 	private static BigliettoDAO BIGLIETTODAO_INSTANCE = null;
 

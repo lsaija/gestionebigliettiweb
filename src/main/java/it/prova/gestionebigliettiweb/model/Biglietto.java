@@ -28,7 +28,7 @@ public class Biglietto {
 	@Column(name = "data")
 	private Date data;
 	@Column(name = "prezzo")
-	private  Integer prezzo;
+	private Integer prezzo;
 
 	@CreationTimestamp
 	private LocalDateTime createDateTime;
