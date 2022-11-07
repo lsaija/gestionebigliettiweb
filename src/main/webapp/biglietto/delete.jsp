@@ -22,7 +22,7 @@
 			  <div class="container">
 			  
 			  		<div class='card'>
-					    <div class='card-header'>
+					    <div class='text-secondary card-header'>
 					        <h5>Visualizza dettaglio</h5>
 					    </div>
 					     <% Biglietto bigliettoInPagina = (Biglietto)request.getAttribute("delete_biglietto_attr"); %>
@@ -56,7 +56,7 @@
 					        <a href="ListBigliettiServlet" class='btn btn-outline-secondary' style='width:80px'>
 					            <i class='fa fa-chevron-left'></i> Back
 					        </a>
-					        <button type="submit" name="submit" value="submit" id="submit" class="btn btn-primary">Conferma</button>
+					        <button type="submit" name="submit" value="submit" id="submit" class="text-light btn btn-info">Conferma</button>
 					        <input type ="hidden" name="idBiglietto" value="<%=bigliettoInPagina.getId() %>">
 					    </div>
 					        </form>

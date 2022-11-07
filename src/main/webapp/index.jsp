@@ -70,7 +70,7 @@
 			     <div class="p-5 mb-4 bg-  bg-gradient rounded-3">
 				      <div class="container-fluid py-5">
 				        <h1 class="text-secondary display-5 fw-bold">Prenditi una pausa...VOLA</h1>
-				        <p class=" text-secondary col-md-8 fs-4">Scopri Praga, Madrid e altre città. Viaggia a Nov-Gen.Si applicano termini e condizioni. 
+				        <p class=" text-secondary col-md-8 fs-4">Con il gestore di biglietti si può viaggiare senza preoccuparsi di perderli, sempre aggiornabili e se ci fossero imprevisti cancellali . 
 				           <!--   <a href="#" class="text-secondary icon-link">Termini e Condizioni.  -->
                           <div class="w-25 p-3" style="background-color: #;"></div>
 			            </p>
