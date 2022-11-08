@@ -1,4 +1,7 @@
 <!doctype html>
+ <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+<%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>
+
 <html lang="it" class="h-100" >
 	 <head>
 	 
@@ -75,9 +78,9 @@
                           <div class="w-25 p-3" style="background-color: #;"></div>
 			            </p>
 			            
-				       <a class=" btn btn-outline-info btn-lg" href="ListBigliettiServlet">VOLI ACQUISTATI</a> 
+				       <a class=" btn btn-outline-info btn-lg" href="${pageContext.request.contextPath}/ListBigliettiServlet">VOLI ACQUISTATI</a> 
 
-				        <a  href="PrepareSearchBigliettoServlet"  class="btn btn-warning btn-lg bi bi-airplane-fill">
+				        <a  href="${pageContext.request.contextPath}/PrepareSearchBigliettoServlet"  class="btn btn-warning btn-lg bi bi-airplane-fill">
 				           CERCA
 			               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-airplane-fill" viewBox="0 0 16 16">
                              <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Z"/>
@@ -91,29 +94,35 @@
 			  <!--  features di bootstrap 'Columns with icons'  -->
 			  <div class="container px-4 py-5" id="featured-3">
 			    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+			        
 			      <div class="feature col">
+
 			        <div class="feature-icon bg-secondary bg-gradient">
-			          <svg class="bi bi-trash" width="1em" height="1em"><use xlink:href="#trash"/></svg>
-			            
+			          <svg class="bi bi-trash" width="1em" height="1em"><use xlink:href="#trash"/></svg>   
 			        </div>
+			        
 			        <h2>Cancella Volo</h2>
 			        <p>Cancella il biglietto cliccando 'delete' vicino al biglietto da rimuovere. E ricorda di confermare.</p>
-			        <a href="ListBigliettiServlet" class="text-info icon-link">
+			        <a  href="${pageContext.request.contextPath}/ErrorUserServlet" class="text-info icon-link"> -->
+			        
 			          Vai alla funzionalità
 			          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
 			        </a>
 			      </div>
+			     
+			      
 			      <div class="feature col">
 			        <div class="feature-icon bg-secondary bg-gradient">
 			          <svg class="bi" width="1em" height="1em"><use xlink:href="#insert-icon"/></svg>
 			        </div>
 			        <h2>Inserisci Nuovo</h2>
 			        <p>Aggiungi Voli acquistati,compila i campi ed il gioco è fatto.</p>
-			        <a href="PrepareInsertBigliettoServlet" class="text-info icon-link">
+			        <a href="${pageContext.request.contextPath}/admin/PrepareInsertBigliettoServlet" class="text-info icon-link">
 			          Vai alla funzionalità
 			          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
 			        </a>
 			      </div>
+			      
 			      <div class="feature col">
 			        <div class="feature-icon bg-secondary bg-gradient">
 			          <svg class="bi" width="1em" height="1em"><use xlink:href="#update-icon"/></svg>
